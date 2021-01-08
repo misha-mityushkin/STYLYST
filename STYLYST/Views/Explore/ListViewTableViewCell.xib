@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GlacialIndifference-Bold.otf">
+            <string>GlacialIndifference-Bold</string>
+        </array>
+        <array key="GlacialIndifference-Regular.otf">
+            <string>GlacialIndifference-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="listViewCell" rowHeight="429" id="KGk-i7-Jjw" customClass="ListViewTableViewCell" customModule="STYLYST" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="430"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="430" height="430"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXq-mC-nbV" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                        <rect key="frame" x="25" y="25" width="380" height="230"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="230" id="ffG-wn-NT4"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Business Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="bio-0e-jxd">
+                        <rect key="frame" x="20" y="265" width="390" height="38.5"/>
+                        <fontDescription key="fontDescription" name="GlacialIndifference-Bold" family="Glacial Indifference" pointSize="33"/>
+                        <color key="textColor" name="GoldenThemeColorDefault"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123 Default Street, City, Province, Postal Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdO-Ng-a5I">
+                        <rect key="frame" x="20" y="313.5" width="390" height="26.5"/>
+                        <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="20"/>
+                        <color key="textColor" name="GoldenThemeColorInverse"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="ARj-Bk-rUp">
+                        <rect key="frame" x="50" y="347" width="141.5" height="26"/>
+                        <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="22"/>
+                        <color key="textColor" name="GoldenThemeColorInverse"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barberMapPin" translatesAutoresizingMaskIntoConstraints="NO" id="K2e-tO-XNy">
+                        <rect key="frame" x="15" y="345" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Hx1-lK-hGh"/>
+                            <constraint firstAttribute="width" constant="30" id="mW0-Fz-Bmd"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="p3c-Zy-3Ki">
+                        <rect key="frame" x="201.5" y="355.5" width="10" height="9"/>
+                        <color key="tintColor" name="GoldenThemeColorDefault"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="Qqh-Sf-dOr"/>
+                            <constraint firstAttribute="height" constant="10" id="xdA-RX-oUV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.4km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="56d-2h-UVa">
+                        <rect key="frame" x="221.5" y="347" width="61" height="26"/>
+                        <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="22"/>
+                        <color key="textColor" name="GoldenThemeColorInverse"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XbO-HM-jdz">
+                        <rect key="frame" x="358" y="347.5" width="24" height="24"/>
+                        <color key="tintColor" name="GoldenThemeColorDefault"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="CNy-KK-nGg"/>
+                            <constraint firstAttribute="width" constant="24" id="x4Q-c1-dUN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="4.6" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="QQf-JT-1oD">
+                        <rect key="frame" x="387" y="348" width="28" height="24"/>
+                        <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="20"/>
+                        <color key="textColor" name="GoldenThemeColorInverse"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Next available appointment: Aug 2, 4:30pm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="WAg-Ng-mFR">
+                        <rect key="frame" x="25" y="385" width="380" height="24"/>
+                        <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="20"/>
+                        <color key="textColor" name="GoldenThemeColorInverse"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ARj-Bk-rUp" firstAttribute="centerY" secondItem="K2e-tO-XNy" secondAttribute="centerY" id="2Z9-ya-EXg"/>
+                    <constraint firstItem="p3c-Zy-3Ki" firstAttribute="centerY" secondItem="K2e-tO-XNy" secondAttribute="centerY" id="4T1-hg-WIy"/>
+                    <constraint firstItem="cXq-mC-nbV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="4g6-Uv-zre"/>
+                    <constraint firstItem="EdO-Ng-a5I" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="9BX-hx-8fZ"/>
+                    <constraint firstAttribute="trailing" secondItem="cXq-mC-nbV" secondAttribute="trailing" constant="25" id="Ay0-Hz-Pcm"/>
+                    <constraint firstAttribute="trailing" secondItem="bio-0e-jxd" secondAttribute="trailing" constant="20" id="B7Z-eN-v4q"/>
+                    <constraint firstItem="XbO-HM-jdz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="56d-2h-UVa" secondAttribute="trailing" constant="10" id="Cc4-TT-TYE"/>
+                    <constraint firstItem="56d-2h-UVa" firstAttribute="leading" secondItem="p3c-Zy-3Ki" secondAttribute="trailing" constant="10" id="IQO-jb-RO4"/>
+                    <constraint firstItem="WAg-Ng-mFR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="Inf-61-XvQ"/>
+                    <constraint firstItem="bio-0e-jxd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="MDK-bv-nkR"/>
+                    <constraint firstItem="56d-2h-UVa" firstAttribute="centerY" secondItem="p3c-Zy-3Ki" secondAttribute="centerY" id="O5X-Us-EGT"/>
+                    <constraint firstItem="K2e-tO-XNy" firstAttribute="top" secondItem="EdO-Ng-a5I" secondAttribute="bottom" constant="5" id="PUz-nI-NxD"/>
+                    <constraint firstItem="p3c-Zy-3Ki" firstAttribute="leading" secondItem="ARj-Bk-rUp" secondAttribute="trailing" constant="10" id="T65-dM-Bfy"/>
+                    <constraint firstItem="EdO-Ng-a5I" firstAttribute="top" secondItem="bio-0e-jxd" secondAttribute="bottom" constant="10" id="UMa-b2-RD8"/>
+                    <constraint firstAttribute="trailing" secondItem="QQf-JT-1oD" secondAttribute="trailing" constant="15" id="WWI-m0-Tow"/>
+                    <constraint firstItem="QQf-JT-1oD" firstAttribute="leading" secondItem="XbO-HM-jdz" secondAttribute="trailing" constant="5" id="cBq-nn-NNV"/>
+                    <constraint firstItem="WAg-Ng-mFR" firstAttribute="top" secondItem="K2e-tO-XNy" secondAttribute="bottom" constant="10" id="dPA-5s-4JX"/>
+                    <constraint firstItem="ARj-Bk-rUp" firstAttribute="leading" secondItem="K2e-tO-XNy" secondAttribute="trailing" constant="5" id="dXd-O8-lm5"/>
+                    <constraint firstItem="K2e-tO-XNy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="e1U-Sd-Sed"/>
+                    <constraint firstAttribute="trailing" secondItem="WAg-Ng-mFR" secondAttribute="trailing" constant="25" id="fvZ-3Z-Isf"/>
+                    <constraint firstItem="WAg-Ng-mFR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="lCd-Hx-SfK"/>
+                    <constraint firstItem="QQf-JT-1oD" firstAttribute="centerY" secondItem="K2e-tO-XNy" secondAttribute="centerY" id="lpQ-3U-fMr"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="56d-2h-UVa" secondAttribute="trailing" constant="20" id="qU5-a7-0zW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="WAg-Ng-mFR" secondAttribute="trailing" constant="5" id="rVW-dv-w76"/>
+                    <constraint firstAttribute="trailing" secondItem="EdO-Ng-a5I" secondAttribute="trailing" constant="20" id="rpi-pN-K18"/>
+                    <constraint firstItem="cXq-mC-nbV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="uUb-uk-bba"/>
+                    <constraint firstItem="bio-0e-jxd" firstAttribute="top" secondItem="cXq-mC-nbV" secondAttribute="bottom" constant="10" id="w1S-j5-nsF"/>
+                    <constraint firstItem="XbO-HM-jdz" firstAttribute="centerY" secondItem="K2e-tO-XNy" secondAttribute="centerY" id="wDL-fz-h6t"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WAg-Ng-mFR" secondAttribute="bottom" constant="10" id="wFG-bS-YMU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="addressLabel" destination="EdO-Ng-a5I" id="cLV-DT-Jmx"/>
+                <outlet property="businessNameLabel" destination="bio-0e-jxd" id="3k0-PM-UX0"/>
+                <outlet property="businessTypeImage" destination="K2e-tO-XNy" id="958-EQ-opI"/>
+                <outlet property="businessTypeLabel" destination="ARj-Bk-rUp" id="u5Y-bb-aqT"/>
+                <outlet property="distanceLabel" destination="56d-2h-UVa" id="x42-u2-HFr"/>
+                <outlet property="nextAvailableApptLabel" destination="WAg-Ng-mFR" id="3ag-4t-8UE"/>
+                <outlet property="slideshowHeightConstraint" destination="ffG-wn-NT4" id="CyW-2O-Kq1"/>
+                <outlet property="slideshowView" destination="cXq-mC-nbV" id="JB4-0E-FKE"/>
+            </connections>
+            <point key="canvasLocation" x="217.39130434782609" y="262.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="barberMapPin" width="33" height="33"/>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <namedColor name="GoldenThemeColorDefault">
+            <color red="0.8970000147819519" green="0.8410000205039978" blue="0.72200000286102295" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="GoldenThemeColorInverse">
+            <color red="0.875" green="0.76499998569488525" blue="0.5690000057220459" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

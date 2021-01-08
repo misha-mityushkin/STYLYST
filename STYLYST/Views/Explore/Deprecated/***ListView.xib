@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cfa-YW-fpk" customClass="ListViewOLD" customModule="STYLYST">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jZB-SX-GZ5">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Y6b-V7-fX1">
+                    <rect key="frame" x="15" y="54" width="384" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7y6-pE-jMo">
+                            <rect key="frame" x="0.0" y="5.5" width="40" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="8qP-UX-26s"/>
+                                <constraint firstAttribute="width" constant="40" id="h7Y-IR-Iig"/>
+                            </constraints>
+                            <color key="tintColor" name="GoldenThemeColorDark"/>
+                            <state key="normal" backgroundImage="map" catalog="system"/>
+                            <connections>
+                                <action selector="mapViewButtonPressed:" destination="cfa-YW-fpk" eventType="touchUpInside" id="b20-Sy-N56"/>
+                            </connections>
+                        </button>
+                        <searchBar clipsSubviews="YES" contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeF-ZU-4Z0">
+                            <rect key="frame" x="50" y="5" width="334" height="40"/>
+                            <color key="backgroundColor" name="GoldenThemeColorDefault"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Nri-1N-el0"/>
+                            </constraints>
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="barTintColor" name="GoldenThemeColorDefault"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            <scopeButtonTitles>
+                                <string>Barbershops</string>
+                                <string>Salons</string>
+                                <string>Niggers</string>
+                            </scopeButtonTitles>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </searchBar>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="9e7-jr-Bge"/>
+                        <constraint firstAttribute="height" constant="50" id="HwM-Xq-XbG"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Y6b-V7-fX1" firstAttribute="leading" secondItem="cfa-YW-fpk" secondAttribute="leading" constant="15" id="0cq-WF-gAz"/>
+                <constraint firstAttribute="bottom" secondItem="jZB-SX-GZ5" secondAttribute="bottom" id="1EM-pH-aQW"/>
+                <constraint firstItem="jZB-SX-GZ5" firstAttribute="leading" secondItem="cfa-YW-fpk" secondAttribute="leading" id="EJx-Ym-LKb"/>
+                <constraint firstItem="jZB-SX-GZ5" firstAttribute="top" secondItem="cfa-YW-fpk" secondAttribute="top" id="Hiv-2R-2qD"/>
+                <constraint firstAttribute="trailing" secondItem="Y6b-V7-fX1" secondAttribute="trailing" constant="15" id="Uvt-fk-xIS"/>
+                <constraint firstAttribute="trailing" secondItem="jZB-SX-GZ5" secondAttribute="trailing" id="dzi-FV-dbq"/>
+                <constraint firstItem="Y6b-V7-fX1" firstAttribute="top" secondItem="Vg9-J4-bM7" secondAttribute="top" constant="10" id="lEz-Ft-bZl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Vg9-J4-bM7"/>
+            <connections>
+                <outlet property="searchBar" destination="JeF-ZU-4Z0" id="gQu-HR-IF4"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="800"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="320" height="568"/>
+        <image name="map" catalog="system" width="128" height="113"/>
+        <namedColor name="GoldenThemeColorDark">
+            <color red="0.61599999666213989" green="0.54100000858306885" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="GoldenThemeColorDefault">
+            <color red="0.8970000147819519" green="0.8410000205039978" blue="0.72200000286102295" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

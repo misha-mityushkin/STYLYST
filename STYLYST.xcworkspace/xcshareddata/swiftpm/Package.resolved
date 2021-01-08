@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "IQKeyboardManagerSwift",
+        "repositoryURL": "https://github.com/hackiftekhar/IQKeyboardManager.git",
+        "state": {
+          "branch": null,
+          "revision": "b0f0a127cca6bb39378447baa2afff74123abd09",
+          "version": "6.5.5"
+        }
+      },
+      {
+        "package": "SideMenu",
+        "repositoryURL": "https://github.com/jonkykong/SideMenu.git",
+        "state": {
+          "branch": null,
+          "revision": "138103093176154f84ae9a2a63e58b9ae78bc6d7",
+          "version": "6.4.8"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
